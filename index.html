@@ -64,7 +64,6 @@
         const statusText = document.querySelector('#status');
 
         function startTimer(seconds, label) {
-            // Clear any existing timers first
             clearInterval(countdown);
             
             statusText.innerText = label;
@@ -92,7 +91,7 @@
             const displayStr = `${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`;
             
             display.textContent = displayStr;
-            document.title = displayStr + " - Timer"; // Updates the browser tab
+            document.title = displayStr + " - Timer";
         }
 
         function stopTimer() {
